@@ -1,0 +1,100 @@
+Locate a microwave for me.,Microwave
+Can you help me find a microwave?,Microwave
+I need assistance in finding a microwave.,Microwave
+Please find me a microwave oven.,Microwave
+Could you locate a microwave for me, please?,Microwave
+I'm looking for a microwave. Can you help?,Microwave
+Can you point me in the direction of the microwaves?,Microwave
+I require your help in finding a microwave oven.,Microwave
+Help me track down a microwave, please.,Microwave
+Find me a microwave ASAP.,Microwave
+Locate a coffee machine for me.,CoffeeMachine
+Find me a coffee maker.,CoffeeMachine
+Can you help me locate a coffee machine?,CoffeeMachine
+I'm in need of a coffee maker. Find one for me.,CoffeeMachine
+Please find and provide information about a coffee machine.,CoffeeMachine
+Assist me in finding a coffee maker.,CoffeeMachine
+I require assistance in locating a coffee machine.,CoffeeMachine
+Help me locate a coffee maker, please.,CoffeeMachine
+Can you find a coffee machine for me?,CoffeeMachine
+I'm looking for a coffee maker. Can you help me find one?,CoffeeMachine
+Locate a refrigerator!,Fridge
+Find a fridge!,Fridge
+Search for a refrigerator!,Fridge
+Locate the nearest fridge!,Fridge
+Seek out a fridge!,Fridge
+Discover a refrigerator!,Fridge
+Track down a fridge!,Fridge
+Hunt for a refrigerator!,Fridge
+Pinpoint a fridge's location!,Fridge
+Uncover the whereabouts of a fridge!,Fridge
+Locate the toaster!,Toaster
+Discover where the toaster is.,Toaster
+Search for the toaster's whereabouts.,Toaster
+Seek out the toaster's location.,Toaster
+Locate and bring me the toaster.,Toaster
+Find the toaster and bring it here.,Toaster
+Hunt down the toaster's position.,Toaster
+Track down the toaster's whereabouts.,Toaster
+Search high and low for the toaster.,Toaster
+Retrieve the toaster by finding it.,Toaster
+Locate the light switch.,LightSwitch
+Find the switch for the light.,LightSwitch
+Discover the light switch.,LightSwitch
+Locate the control to turn on the light.,LightSwitch
+Hunt for the switch that controls the light.,LightSwitch
+Find the toggle switch for the light.,LightSwitch
+Spot the button to turn on the light.,LightSwitch
+Search for the switch that activates the light.,LightSwitch
+Look for the control panel to turn on the light.,LightSwitch
+Identify the switch to illuminate the room.,LightSwitch
+Locate the potato!,Potato
+Discover the whereabouts of the potato.,Potato
+Search and find the potato.,Potato
+Seek out the potato.,Potato
+Uncover the potato's location.,Potato
+Pinpoint the presence of the potato.,Potato
+Identify where the potato is.,Potato
+Track down the potato.,Potato
+Find the elusive potato.,Potato
+Hunt for the potato.,Potato
+Locate a loaf of bread.,Bread
+Find me some bread, please.,Bread
+I need you to get me a piece of bread.,Bread
+Can you go and fetch a loaf of bread for me?,Bread
+Please find and bring me some bread.,Bread
+I'm in need of bread. Could you help me find it?,Bread
+Your mission is to track down a loaf of bread.,Bread
+Go on a quest to find the holy grail of bread.,Bread
+I require your assistance in obtaining bread. Can you find it?,Bread
+Embark on a bread-finding adventure and bring back the prize.,Bread
+Locate the plate, please.,Plate
+Find the plate for me, please.,Plate
+Can you search for the plate?,Plate
+I need you to find the plate.,Plate
+Locate and retrieve the plate.,Plate
+Please locate the plate and bring it to me.,Plate
+Can you help me locate the plate?,Plate
+I'm looking for the plate. Can you find it?,Plate
+Find the plate and let me know where it is.,Plate
+Your task is to find the plate.,Plate
+Locate a knife.,Knife
+Please find a knife for me.,Knife
+Can you search for a knife?,Knife
+I need assistance in finding a knife.,Knife
+Seek out a knife and bring it to me.,Knife
+Discover where a knife is located.,Knife
+Look around for a knife.,Knife
+Find me a sharp blade.,Knife
+Locate a cutting tool.,Knife
+Scout for a knife in the vicinity.,Knife
+Locate a tomato for me.,Tomato
+Find me a ripe tomato.,Tomato
+Can you please search for a tomato?,Tomato
+I need you to find a tomato.,Tomato
+Locate and bring me a tomato.,Tomato
+Search for a tomato and let me know when you find one.,Tomato
+Find a fresh tomato and bring it to me.,Tomato
+Can you find a tomato and bring it here?,Tomato
+Please locate a tomato and bring it to my location.,Tomato
+I require your assistance in finding a tomato.,Tomato
