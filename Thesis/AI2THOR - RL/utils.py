@@ -66,7 +66,7 @@ def encode_feedback(event, controller, target_name):
     is_found = data[index_location]["visible"]
     
     if is_found:
-        reward = +10.0
+        reward = +20.0
     else:
         reward = -0.05
            
