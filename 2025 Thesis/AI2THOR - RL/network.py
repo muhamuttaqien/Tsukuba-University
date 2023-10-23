@@ -42,7 +42,7 @@ class DQN(nn.Module):
         state = F.relu(self.bn3(self.conv3(state)))
         
         # this will output Q(s,left) and Q(s,right) (where s is the input to the network) [left0exp,right0exp]
-        Qsa = self.head(state.view(state.size(0), -1))
+        Qsa = self.head(state.reshape(state.size(0), -1))
         
         return Qsa
     
