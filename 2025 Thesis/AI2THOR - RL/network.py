@@ -44,5 +44,84 @@ class DQN(nn.Module):
         Qsa = self.head(state.reshape(state.size(0), -1))
         
         return Qsa
+
+
+class PolicyNetwork(nn.Module):
+    """Policy Network architecture with Convolutional Layers."""
     
+    def __init__(self, width, height, hidden_size, output_size, seed):
+        
+        super(PolicyNetwork, self).__init__()
+        
+        self.seed = torch.manual_seed(seed)
+        
+        # Convolutional layers for feature extraction
+        self.conv1 = nn.Conv2d(3, 16, kernel_size=3, stride=1, padding=1)
+        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
+        
+        # Calculate the size of the flattened output from convolutional layers
+        convw = width // 4  # Assuming 2 max-pooling layers with kernel_size=2 and stride=2
+        convh = height // 4
+        linear_input_size = convw * convh * 32
+        
+        # Fully connected layers
+        linear_input_size = 320000
+        
+        self.fc1_layer = nn.Linear(linear_input_size, hidden_size)
+        self.fc2_layer = nn.Linear(hidden_size, output_size)
     
+    def forward(self, state):
+        
+        # Convolutional layers
+        state = F.relu(self.conv1(state))
+        state = F.relu(self.conv2(state))
+        
+        # Flatten the output before passing it through fully connected layers
+        state = state.view(state.size(0), -1)
+        
+        # Fully connected layers
+        logits = F.relu(self.fc1_layer(state))
+        logits = self.fc2_layer(logits)
+        probs = F.softmax(logits, dim=1) # Assuming dim=1 is the correct dimension for softmax
+        
+        return probs
+
+
+class ValueNetwork(nn.Module):
+    """Value Network architecture with Convolutional Layers."""
+    
+    def __init__(self, width, height, hidden_size, output_size, seed):
+        
+        super(ValueNetwork, self).__init__()
+        
+        self.seed = torch.manual_seed(seed)
+        
+        # Convolutional layers for feature extraction
+        self.conv1 = nn.Conv2d(3, 16, kernel_size=3, stride=1, padding=1)
+        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
+        
+        # Calculate the size of the flattened output from convolutional layers
+        convw = width // 4  # Assuming 2 max-pooling layers with kernel_size=2 and stride=2
+        convh = height // 4
+        linear_input_size = convw * convh * 32
+        
+        # Fully connected layers
+        linear_input_size = 320000
+        
+        self.fc1_layer = nn.Linear(linear_input_size, hidden_size)
+        self.fc2_layer = nn.Linear(hidden_size, output_size)
+    
+    def forward(self, state):
+        
+        # Convolutional layers
+        state = F.relu(self.conv1(state))
+        state = F.relu(self.conv2(state))
+        
+        # Flatten the output before passing it through fully connected layers
+        state = state.view(state.size(0), -1)
+        
+        # Fully connected layers
+        state_value = F.relu(self.fc1_layer(state))
+        state_value = self.fc2_layer(state_value)
+        
+        return state_value
