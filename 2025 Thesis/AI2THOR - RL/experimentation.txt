@@ -1,0 +1,55 @@
+🔴 Train with custom CNN ✅
+🔴 Train with resnet ✅
+🔴 Train with random initialization ✅
+🔴 Train object switch, fridge, tomato ✅
+🔴 Train object tomato with sentence ✅
+🔴 Train joint (not modular) model (with 2 objects)
+⚪ DL: Learning Rate ✅
+⚪ DL: Modify NN Architecture ✅
+⚪ RL: Replay Buffer Size
+⚪ RL: Exploration Rate (Epsilon-Greedy Exploration)
+⚪ RL: Target Network Update Frequency (Tau)
+🔴 Train joint (not modular) model (with 3 objects)
+🔴 Train A2C RL
+🔴 Prepare curriculum learning
+
+
+STRATEGY
+--- Increase model capacity
+self.fc1 = nn.Linear(576, 1024)
+self.fc2 = nn.Linear(1024, 512)
+self.fc3 = nn.Linear(512, action_size)
+
+change hidden_dim=64 into 128
+
+--- Add dropout
+self.fc1 = nn.Linear(576, 512)
+self.dropout1 = nn.Dropout(0.5)
+self.fc2 = nn.Linear(512, 256)
+self.dropout2 = nn.Dropout(0.5)
+self.fc3 = nn.Linear(256, action_size)
+
+--- Add batchnorm
+self.fc1 = nn.Linear(576, 512)
+self.bn1 = nn.BatchNorm1d(512)
+self.fc2 = nn.Linear(512, 256)
+self.bn2 = nn.BatchNorm1d(256)
+self.fc3 = nn.Linear(256, action_size)
+
+--- Add weight regularization
+self.fc1 = nn.Linear(576, 512, weight_decay=1e-5)
+self.fc2 = nn.Linear(512, 256, weight_decay=1e-5)
+self.fc3 = nn.Linear(256, action_size, weight_decay=1e-5)
+
+--- Add gradient clipping
+torch.nn.utils.clip_grad_norm_(self.parameters(), max_norm=1)
+
+
+INSIGHTS
+1. Linear Decay Epsilon vs Regular Decay Epsilon ✅
+2. 3 different rooms (same architecture, same training config) ✅
+3. Custom CNN vs Resnet CNN ✅
+4. 3 different objects (same architecture, same training config)
+5. 2 objects with LR & FCL changes
+6. Next stage: 3 objects
+7. Next stage: DQN to A3C

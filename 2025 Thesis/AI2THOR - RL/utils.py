@@ -28,7 +28,7 @@ def frame2tensor(frame):
 episode_scores = []
 
 # a helper for plotting the durations of episodes
-def plot_durations(score, i_episode, num_episodes):
+def plot_durations(score, i_episode, num_episodes, instruction, total_score, time_step):
     
     episode_scores.append(score)
                 
@@ -36,7 +36,7 @@ def plot_durations(score, i_episode, num_episodes):
     plt.clf()
     durations_t = torch.tensor(episode_scores, dtype=torch.float)
     
-    plt.title(f'Training Episode: {i_episode}')
+    plt.title(f'Training Episode: {i_episode} (Instruction: {instruction.capitalize()}, Reward: {total_score:.2f}, Time Step: {time_step})')
     plt.xlabel('Episode')
     plt.ylabel('Cummulative Rewards')
     plt.plot(durations_t.numpy(), color='green')
@@ -59,7 +59,7 @@ def plot_durations(score, i_episode, num_episodes):
         return
 
 # a helper for plotting the durations of episodes
-def plot_durations_wo_line(score, i_episode, num_episodes):
+def plot_durations_wo_line(score, i_episode, num_episodes, instruction, total_score, time_step):
     
     episode_scores.append(score)
                 
@@ -67,7 +67,7 @@ def plot_durations_wo_line(score, i_episode, num_episodes):
     plt.clf()
     durations_t = torch.tensor(episode_scores, dtype=torch.float)
     
-    plt.title(f'Training Episode: {i_episode}')
+    plt.title(f'Training Episode: {i_episode} (Instruction: {instruction.capitalize()}, Reward: {total_score:.2f}, Time Step: {time_step})')
     plt.xlabel('Episode')
     plt.ylabel('Cummulative Rewards')
     
