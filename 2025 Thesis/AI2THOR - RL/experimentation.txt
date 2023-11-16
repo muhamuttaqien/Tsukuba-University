@@ -45,6 +45,7 @@ self.fc3 = nn.Linear(256, action_size, weight_decay=1e-5)
 torch.nn.utils.clip_grad_norm_(self.parameters(), max_norm=1)
 
 
+
 INSIGHTS
 1. Linear Decay Epsilon vs Regular Decay Epsilon ✅
 2. 3 different rooms (same architecture, same training config) ✅
@@ -53,3 +54,10 @@ INSIGHTS
 5. 2 objects with LR & FCL changes
 6. Next stage: 3 objects
 7. Next stage: DQN to A3C
+
+
+Change problem to goal
+Change the order (simulator after explaining about RL)
+Make sure important things written
+Differentiate between explanation and my work
+Why in the home
