@@ -55,9 +55,9 @@ INSIGHTS
 6. Next stage: 3 objects
 7. Next stage: DQN to A3C
 
-
+---
 Change problem to goal
+Why in the home
 Change the order (simulator after explaining about RL)
 Make sure important things written
 Differentiate between explanation and my work
-Why in the home
