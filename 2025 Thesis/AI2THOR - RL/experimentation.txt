@@ -56,8 +56,8 @@ INSIGHTS
 7. Next stage: DQN to A3C
 
 ---
-Change problem to goal
+Change problem to goal ✅
 Why in the home
 Change the order (simulator after explaining about RL)
-Make sure important things written
-Differentiate between explanation and my work
+Make sure important things written ✅
+Differentiate between explanation and my work ✅
