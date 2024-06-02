@@ -1,1 +1,20 @@
+Design Architecture & LLMs possibility
 https://chat.openai.com/c/10a638b6-a37d-4023-8c65-96fb00c6ae74
+https://chat.openai.com/c/9bdff7ef-8a30-4272-9091-7e884b1d217a
+
+Attention Mechanism
+https://chat.openai.com/c/03a20ff9-f982-4a6e-b7be-9e7f5ebd0aa9
+
+Curriculum Design & Padding Issue
+https://chat.openai.com/c/3faffdb2-8abe-4453-b501-357d27fa2c7a
+
+All about plotting
+https://chat.openai.com/c/6d121df2-9a6e-4974-92af-e4a8b732341c
+https://chat.openai.com/c/999f3d54-ea60-4252-a522-aa9d5ab96939
+
+ALFRED Paper
+https://chat.openai.com/g/g-NgAcklHd8-scispace/c/3afa5800-337b-4bea-9fec-f2a0831b7166
+
+Reward & Scaleup Strategy
+https://chat.openai.com/c/5daf015e-0ea2-4d33-905e-3c3a1a27bc2f
+
