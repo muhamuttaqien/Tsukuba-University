@@ -1,0 +1,14 @@
+220
+instructions = [("find candle", "Candle_7afa0b81"), 
+                ("find box", "Box_402749e7"), 
+                ("find statue", "Statue_54872788")]
+   
+320
+instructions = [("find phone", "CellPhone_15633f73"), 
+                ("find pen", "Pen_31f13aa0"), 
+                ("find alarm", "AlarmClock_fee6a9a6")]
+
+427
+instructions = [("find paper", "ToiletPaper_05788e74"), 
+                ("find candle", "Candle_e3414f18"), 
+                ("find roll", "PaperTowelRoll_c7b2ef4e")]
